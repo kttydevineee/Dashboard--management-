@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorPro Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" aria-label="Main navigation">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">⚡</span>
+                <span class="logo-text">CreatorPro</span>
+            </div>
+            <ul>
+                <li class="nav-item active" tabindex="0" aria-current="page">
+                    <span class="nav-icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="nav-text">Dashboard</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-user"></i></span>
+                    <span class="nav-text">Creator Profiles</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-robot"></i></span>
+                    <span class="nav-text">AI Content</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-comments"></i></span>
+                    <span class="nav-text">Fan Engagement</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-sync-alt"></i></span>
+                    <span class="nav-text">Workflows</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-users"></i></span>
+                    <span class="nav-text">Community</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-chart-pie"></i></span>
+                    <span class="nav-text">Analytics</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-dollar-sign"></i></span>
+                    <span class="nav-text">Revenue</span>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <span class="nav-icon"><i class="fas fa-cog"></i></span>
+                    <span class="nav-text">Settings</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1 class="page-title">Creator Dashboard</h1>
+                <div class="user-menu">
+                    <div class="toggle-container">
+                        <label class="toggle-switch" for="managerToggle">
+                            <span class="toggle-text">Manager View</span>
+                            <input type="checkbox" id="managerToggle" aria-checked="false" aria-label="Toggle Manager View">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="user-avatar" aria-label="User avatar" tabindex="0">A</div>
+                </div>
+            </header>
+
+            <section class="dashboard-grid" aria-label="Dashboard metrics">
+                <div class="card metric-card">
+                    <div class="metric-title">Total Revenue</div>
+                    <div class="metric-value">$24,582</div>
+                    <div class="metric-change up" aria-label="Revenue increased"><i class="fas fa-arrow-up"></i> 12.5% from last month</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-title">Active Creators</div>
+                    <div class="metric-value">18</div>
+                    <div class="metric-change up" aria-label="Creators increased"><i class="fas fa-arrow-up"></i> 2 from last week</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-title">Engagement Rate</div>
+                    <div class="metric-value">7.8%</div>
+                    <div class="metric-change down" aria-label="Engagement decreased"><i class="fas fa-arrow-down"></i> 0.4% from last week</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-title">Content Published</div>
+                    <div class="metric-value">327</div>
+                    <div class="metric-change up" aria-label="Content published increased"><i class="fas fa-arrow-up"></i> 42 this week</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-title">New Subscribers</div>
+                    <div class="metric-value">1,248</div>
+                    <div class="metric-change up" aria-label="Subscribers increased"><i class="fas fa-arrow-up"></i> 18% from last month</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-title">Avg. Revenue per Fan</div>
+                    <div class="metric-value">$3.27</div>
+                    <div class="metric-change up" aria-label="Average revenue per fan increased"><i class="fas fa-arrow-up"></i> $0.15 from last month</div>
+                </div>
+                <!-- Revenue Optimization Card -->
+                <div class="card optimization-card">
+                    <div class="optimization-header">
+                        <h2 class="optimization-title">Revenue Optimization Engine</h2>
+                        <div class="metric-change up"><i class="fas fa-sync-alt"></i> Live Updates</div>
+                    </div>
+                    <p>AI-powered revenue optimization analyzing performance across all platforms to maximize earnings.</p>
+                    <div class="optimization-stats">
+                        <div class="optimization-stat">
+                            <div class="metric-title">A/B Tests Running</div>
+                            <div class="metric-value">12</div>
+                        </div>
+                        <div class="optimization-stat">
+                            <div class="metric-title">Revenue Increase</div>
+                            <div class="metric-value">17.3%</div>
+                        </div>
+                        <div class="optimization-stat">
+                            <div class="metric-title">Optimal Price Points</div>
+                            <div class="metric-value">38</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="manager-view" id="managerView" aria-label="Manager commission breakdown" hidden>
+                <div class="manager-header">
+                    <h2 class="section-title">Commission Breakdown</h2>
+                    <div class="total-earnings">
+                        <strong>Your Total Earnings: <span id="totalCommission">$2,458.20</span></strong>
+                    </div>
+                </div>
+                <div class="commission-grid" id="commissionGrid" aria-live="polite">
+                    <!-- Commission cards will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section aria-label="Recent Content Performance">
+                <h2 class="section-title">Recent Content Performance</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div class="content-image" aria-hidden="true"><i class="fas fa-image fa-3x"></i></div>
+                        <div class="content-details">
+                            <div class="content-title">Summer Beach Photoshoot</div>
+                            <div class="content-stats">
+                                <span><i class="fas fa-heart"></i> 248 engagements</span>
+                                <span><i class="fas fa-dollar-sign"></i> 420 revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-image" aria-hidden="true"><i class="fas fa-video fa-3x"></i></div>
+                        <div class="content-details">
+                            <div class="content-title">Q&A Session</div>
+                            <div class="content-stats">
+                                <span><i class="fas fa-heart"></i> 187 engagements</span>
+                                <span><i class="fas fa-dollar-sign"></i> 315 revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-image" aria-hidden="true"><i class="fas fa-image fa-3x"></i></div>
+                        <div class="content-details">
+                            <div class="content-title">Behind the Scenes</div>
+                            <div class="content-stats">
+                                <span><i class="fas fa-heart"></i> 326 engagements</span>
+                                <span><i class="fas fa-dollar-sign"></i> 582 revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
